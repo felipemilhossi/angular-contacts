@@ -1,0 +1,43 @@
+<ion-menu>
+  <ion-content>
+    <br>
+    <app-user-card></app-user-card>
+
+    <ion-list lines="none">
+      <ion-menu-toggle>
+        <ion-item routerLink="/" detail>
+          <ion-icon slot="start" name="Home"></ion-icon>Home
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+
+  </ion-content>
+  <ion-footer>
+    <ion-list>
+      <ion-button ion-item fill="clear" color="light" expand="full" (click)="logout()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+        Sair
+      </ion-button>
+    </ion-list>
+  </ion-footer>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Meus Contatos
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-content>

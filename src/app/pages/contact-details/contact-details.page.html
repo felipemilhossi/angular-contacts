@@ -1,0 +1,64 @@
+<ion-content *ngIf="contact" class="ion-padding" lines="none">
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="{{contact.image}}">
+    </ion-avatar>
+    <ion-label>
+      <h1>{{contact.name}}</h1>
+      <p>{{contact.city}}</p>
+      <p>CPF: {{contact.cpf}}</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item class="clickable">
+    <ion-icon name="call" color="success" slot="start"></ion-icon>
+    <ion-label>{{contact.fone}}</ion-label>
+  </ion-item>
+  <ion-item class="clickable">
+    <ion-icon color="primary" name="mail-open" slot="start"></ion-icon>
+    <ion-label>{{contact.email}}</ion-label>
+  </ion-item>
+
+  <ion-item lines="none" padding>
+    <ion-card-content class="ion-text-center">
+      <h1>Endereço</h1>
+    </ion-card-content>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>{{contact.street}}</ion-label>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>{{contact.city}} - {{contact.state}} - {{contact.country}}</ion-label>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>CEP: {{contact.zipcode}}</ion-label>
+  </ion-item>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed" routerLink="/contact-editor/{{contact.id}}">
+    <ion-fab-button color="primary">
+      <ion-icon name="create"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="call()" color="success">
+      <ion-icon name="call"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="sendEmail()" color="primary">
+      <ion-icon name="mail-open"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="remove()" color="danger">
+      <ion-icon name="trash"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,77 @@
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeMd="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Contatos</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <form [formGroup]="form">
+              <ion-list lines="none">
+                <ion-item>
+                  <ion-label position="floating">Nome</ion-label>
+                  <ion-input type="text" formControlName="name"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">E-mail</ion-label>
+                  <ion-input type="email" formControlName="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">CPF</ion-label>
+                  <ion-input mask="###.###.###-##" type="text" formControlName="cpf"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Telefone</ion-label>
+                  <ion-input mask="(##)#####-####" type="text" formControlName="fone"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Rua</ion-label>
+                  <ion-input type="text" formControlName="street"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">CEP</ion-label>
+                  <ion-input mask="#####-###" type="text" formControlName="zipcode"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Cidade</ion-label>
+                  <ion-input type="text" formControlName="city"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Estado</ion-label>
+                  <ion-input type="text" formControlName="state"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">País</ion-label>
+                  <ion-input type="text" formControlName="country"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Imagem</ion-label>
+                  <ion-input type="text" formControlName="image"></ion-input>
+                </ion-item>
+              </ion-list>
+            </form>
+          </ion-card-content>
+        </ion-card>
+        <p>
+          <ion-button *ngIf="!isUpdate" color="primary" shape="round" fill="outline" size="large" expand="full"
+            [disabled]="form.invalid" (click)="add()">
+            CADASTRAR
+          </ion-button>
+          <ion-button *ngIf="isUpdate" color="primary" shape="round" fill="outline" size="large" expand="full"
+            [disabled]="form.invalid" (click)="update()">
+            ATUALIZAR
+          </ion-button>
+          <br>
+          <ion-button *ngIf="isUpdate" routerLink="/contact-details/{{id}}" color="medium" fill="clear" size="small"
+            expand="full">
+            CANCELAR
+          </ion-button>
+          <ion-button *ngIf="!isUpdate" routerLink="/" color="medium" fill="clear" size="small" expand="full">
+            CANCELAR
+          </ion-button>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
