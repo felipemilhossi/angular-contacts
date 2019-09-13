@@ -1,0 +1,427 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "0a8c2f985cf5808c0f192b90e8e27c7e",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "322fcdf0-cf39-11e9-804a-2f97ebfd7d41",
+            "name": "five",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3000,
+            "routes": [
+                {
+                    "uuid": "1a927ea0-cffb-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "address/15000000",
+                    "body": "{\n    \"message\": \"Usuário cadastrado com sucesso!\",\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "1eabb060-cffb-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "customers",
+                    "body": "{\n    \"message\": \"Cliente cadastrado com sucesso!\",\n    \"success\": true,\n    \"data\":{\n        \"id\": \"22f02b73-4e09-4054-989f-7f98bef691fa\"\n    }\n}",
+                    "latency": 1600,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "57a9d680-cffb-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "customers/22f02b73-4e09-4054-989f-7f98bef691fa",
+                    "body": "{\n    \"message\": \"Cliente atualizado com sucesso!\",\n    \"success\": true,\n    \"data\":{\n        \"id\": \"22f02b73-4e09-4054-989f-7f98bef691fa\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "6b732540-cffb-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "customers/22f02b73-4e09-4054-989f-7f98bef691fa",
+                    "body": "{\n    \"message\": \"Cliente excluído com sucesso!\",\n    \"success\": true,\n    \"data\":{\n        \"id\": \"22f02b73-4e09-4054-989f-7f98bef691fa\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "3cd44600-d001-11e9-8574-57f4d079f673",
+                    "documentation": "customer",
+                    "method": "get",
+                    "endpoint": "customers",
+                    "body": "[\n    { \"id\": \"22f02b73-4e09-4054-989f-7f98bef691fa\", \"name\": \"Bruce Wayne\", \"email\": \"batman@balta.io\" },\n   {\"id\": \"22f02b73-4e09-4054-989f-7f98bef691fb\", \"name\": \"Peter Parker\", \"email\": \"spiderman@balta.io\"},\n\n    {\"id\": \"22f02b73-4e09-4054-989f-7f98bef691fc\", \"name\": \"Tony Stark\", \"email\": \"ironman@balta.io\"}\n        \n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "e3ffbbc0-d011-11e9-8574-57f4d079f673",
+                    "documentation": "product",
+                    "method": "get",
+                    "endpoint": "products",
+                    "body": "[\n    {\"code\": \"A2-568\", \"title\":\"Notebook Dell\", \"price\": 5500, \"description\": \"Notebook dell i7\", \"quantity\": 5, \"productClass\": \"INF\"},\n    {\"code\": \"A2-700\", \"title\":\"Roteador TP-Link\", \"price\": 150, \"description\": \"Roteador TP-Link 587-ncb\", \"quantity\": 5, \"productClass\": \"INF\"},\n    {\"code\": \"A2-850\", \"title\":\"Chuteira Adidas\", \"price\": 99, \"description\": \"Chuteira adidas 1235\", \"quantity\": 5, \"productClass\": \"CAL\"},\n    {\"code\": \"A3-001\", \"title\":\"Geladeira Top\", \"price\": 599, \"description\": \"Geladeira top de linha\", \"quantity\": 5, \"productClass\": \"DOM\"}\n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b3df10c0-d012-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "products",
+                    "body": "{\n    \"message\": \"Produto cadastrado com sucesso!\",\n    \"success\": true,\n    \"data\":{\n        \"id\": \"E0-125\"\n    }\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "d2848640-d012-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "products/A2-568",
+                    "body": "{\n    \"message\": \"Produto alterado com sucesso!\",\n    \"success\": true,\n    \"data\":{\n        \"id\": \"E0-125\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "e8e48570-d012-11e9-8574-57f4d079f673",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "products/A2-568",
+                    "body": "{\n    \"message\": \"Produto excluído com sucesso!\",\n    \"success\": true,\n    \"data\":{\n        \"id\": \"E0-125\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "66da80e0-d0d8-11e9-9f1f-ff2d156e4eef",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "v1/accounts/authenticate",
+                    "body": "{\r\n    \"user\":\"felipemilhossi\",\r\n    \"name\":\"Felipe Milhossi\",\r\n    \"image\":\"https://thumbs.dreamstime.com/z/%C3%ADcone-do-sinal-do-usu%C3%A1rio-s%C3%ADmbolo-da-pessoa-avatar-humano-84519083.jpg\",\r\n    \"email\":\"felipe.milhossi@5by5.com.br\",\r\n    \"roles\":[\"user\"],\r\n    \"token\":\"6c48eb94163f407e8cf516deebf147f11565c496c3df486da40b10e6e235c7e250608035e90c44379d9ca7f29d5e836288c70c7da4bd49a99866803da388e702\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f0f1adb0-d4f4-11e9-ad47-89b329ad8173",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "v1/accounts/reset",
+                    "body": "{\r\n    \"user\":\"felipemilhossi\",\r\n    \"name\":\"Felipe Milhossi\",\r\n    \"image\":\"https://thumbs.dreamstime.com/z/%C3%ADcone-do-sinal-do-usu%C3%A1rio-s%C3%ADmbolo-da-pessoa-avatar-humano-84519083.jpg\",\r\n    \"email\":\"felipe.milhossi@5by5.com.br\",\r\n    \"roles\":[\"user\"],\r\n    \"token\":\"6c48eb94163f407e8cf516deebf147f11565c496c3df486da40b10e6e235c7e250608035e90c44379d9ca7f29d5e836288c70c7da4bd49a99866803da388e702\"\r\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "02978030-d4f5-11e9-ad47-89b329ad8173",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "v1/accounts",
+                    "body": "{}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "953e1130-d57a-11e9-b1f3-37dcac78890b",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "v1/contacts",
+                    "body": "[\r\n\t{\r\n\t\t\"id\": \"1\", \r\n\t\t\"name\":\"Ana Maria\", \r\n\t\t\"email\": \"anam@email.com\", \r\n\t\t\"cpf\": \"213.465.798-50\", \r\n\t\t\"fone\": \"(16)98547-8562\", \r\n\t\t\"zipcode\": \"12500-522\",\r\n\t\t\"street\": \"Rua Itália\",\r\n\t\t\"city\": \"Araraquara\",\r\n\t\t\"state\": \"SP\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t},\r\n\t{\r\n\t\t\"id\": \"2\", \r\n\t\t\"name\":\"Beatris Silva\", \r\n\t\t\"email\": \"biasl@email.com\", \r\n\t\t\"cpf\": \"458.325.999-65\", \r\n\t\t\"fone\": \"(16)992547-5214\", \r\n\t\t\"zipcode\": \"12500-200\",\r\n\t\t\"street\": \"Rua Brasil\",\r\n\t\t\"city\": \"Araraquara\",\r\n\t\t\"state\": \"SP\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t},\r\n\t{\r\n\t\t\"id\": \"3\", \r\n\t\t\"name\":\"Zilda Oliveira\", \r\n\t\t\"email\": \"zolive@email.com\", \r\n\t\t\"cpf\": \"456.789.258-34\", \r\n\t\t\"fone\": \"(16)3254-8574\", \r\n\t\t\"zipcode\": \"58352-000\",\r\n\t\t\"street\": \"Rua Roma\",\r\n\t\t\"city\": \"Uberlândia\",\r\n\t\t\"state\": \"MG\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t},\r\n\t\t{\r\n\t\t\"id\": \"4\", \r\n\t\t\"name\":\"Tatiana Utrera\", \r\n\t\t\"email\": \"zolive@email.com\", \r\n\t\t\"cpf\": \"456.789.258-34\", \r\n\t\t\"fone\": \"(16)3254-8574\", \r\n\t\t\"zipcode\": \"58352-000\",\r\n\t\t\"street\": \"Rua Roma\",\r\n\t\t\"city\": \"Uberlândia\",\r\n\t\t\"state\": \"MG\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t},\r\n\t\t{\r\n\t\t\"id\": \"5\", \r\n\t\t\"name\":\"Carla Santos\", \r\n\t\t\"email\": \"zolive@email.com\", \r\n\t\t\"cpf\": \"456.789.258-34\", \r\n\t\t\"fone\": \"(16)3254-8574\", \r\n\t\t\"zipcode\": \"58352-000\",\r\n\t\t\"street\": \"Rua Roma\",\r\n\t\t\"city\": \"Uberlândia\",\r\n\t\t\"state\": \"MG\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t},\r\n\t\t{\r\n\t\t\"id\": \"6\", \r\n\t\t\"name\":\"Ana Carolina\", \r\n\t\t\"email\": \"zolive@email.com\", \r\n\t\t\"cpf\": \"456.789.258-34\", \r\n\t\t\"fone\": \"(16)3254-8574\", \r\n\t\t\"zipcode\": \"58352-000\",\r\n\t\t\"street\": \"Rua Roma\",\r\n\t\t\"city\": \"Uberlândia\",\r\n\t\t\"state\": \"MG\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t}\r\n]",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "c5b0f9e0-d584-11e9-b1f3-37dcac78890b",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "v1/contacts/1",
+                    "body": "{\r\n\t\"id\": \"1\", \r\n\t\"name\":\"Ana Maria\", \r\n\t\"email\": \"anam@email.com\", \r\n\t\"cpf\": \"213.465.798-50\", \r\n\t\"fone\": \"(16)98547-8562\", \r\n\t\"zipcode\": \"12500-522\",\r\n\t\"street\": \"Rua Itália\",\r\n\t\"city\": \"Araraquara\",\r\n\t\"state\": \"SP\",\r\n\t\"country\": \"BRA\",\r\n\t\"image\": \"https://picsum.photos/200/300\"\r\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "4828f3b0-d589-11e9-b1f3-37dcac78890b",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "v1/contacts/2",
+                    "body": "\t{\r\n\t\t\"id\": \"2\", \r\n\t\t\"name\":\"Beatris Silva\", \r\n\t\t\"email\": \"biasl@email.com\", \r\n\t\t\"cpf\": \"458.325.999-65\", \r\n\t\t\"fone\": \"(16)992547-5214\", \r\n\t\t\"zipcode\": \"12500-200\",\r\n\t\t\"street\": \"Rua Brasil\",\r\n\t\t\"city\": \"Araraquara\",\r\n\t\t\"state\": \"SP\",\r\n\t\t\"country\": \"BRA\",\r\n\t\t\"image\": \"https://picsum.photos/200/300\"\r\n\t}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "58e3fdf0-d5be-11e9-b1f3-37dcac78890b",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "v1/contacts",
+                    "body": "{}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "faa50960-d648-11e9-8c46-217b1738194a",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "v1/contacts",
+                    "body": "{}",
+                    "latency": 500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "371090e0-d649-11e9-8c46-217b1738194a",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "v1/contacts",
+                    "body": "{}",
+                    "latency": 500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTIONS"
+                }
+            ]
+        },
+        {
+            "uuid": "1bee3c10-d4f3-11e9-ad47-89b329ad8173",
+            "name": "agenda",
+            "endpointPrefix": "v1",
+            "latency": 0,
+            "port": 3001,
+            "routes": [
+                {
+                    "uuid": "",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/authenticate",
+                    "body": "{\r\n    \"user\":\"felipemilhossi\",\r\n    \"name\":\"Felipe Milhossi\",\r\n    \"image\":\"https://thumbs.dreamstime.com/z/%C3%ADcone-do-sinal-do-usu%C3%A1rio-s%C3%ADmbolo-da-pessoa-avatar-humano-84519083.jpg\",\r\n    \"email\":\"felipe.milhossi@5by5.com.br\",\r\n    \"roles\":[\"user\"],\r\n    \"token\":\"6c48eb94163f407e8cf516deebf147f11565c496c3df486da40b10e6e235c7e250608035e90c44379d9ca7f29d5e836288c70c7da4bd49a99866803da388e702\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b11537d0-d4f3-11e9-ad47-89b329ad8173",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/reset",
+                    "body": "{\n    \"message\": \"Nova senha enviada\",\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "ddc3aa00-d4f3-11e9-ad47-89b329ad8173",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts",
+                    "body": "{\n    \"message\": \"Usuário cadastrado com sucesso!\",\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                }
+            ]
+        }
+    ]
+}
